@@ -1,14 +1,16 @@
 #! /bin/sh
 
 EMAIL=tim.j.wilkinson@gmail.com
+DIST=dev
 
-dpkg-scanpackages --multiversion . > Packages
-gzip -k Packages
+dpkg-scanpackages --multiversion ${DIST} > ${DIST}/Packages
+rm -f ${DIST}/Packages.gz
+gzip -k ${DIST}/Packages
 
-apt-ftparchive release . > Release
-gpg --default-key "${EMAIL}" -abs -o - Release > Release.gpg
-gpg --default-key "${EMAIL}" --clearsign -o - Release > InRelease
+apt-ftparchive release ${DIST} > ${DIST}/Release
+gpg --default-key "${EMAIL}" -abs -o - ${DIST}/Release > ${DIST}/Release.gpg
+gpg --default-key "${EMAIL}" --clearsign -o - ${DIST}/Release > ${DIST}/InRelease
 
-git add -A
-git commit -m update
-git push
+#git add -A ${DIST}/*.deb
+#git commit -m update
+#git push
