@@ -1,0 +1,7 @@
+#! /bin/sh
+cd /root/proxmox
+for i in $(find . -name *.deb); do
+	b=$(basename ${i})
+	echo ${b}:
+	rsync -ptog ${i} REPO/${b}
+done
