@@ -1,12 +1,11 @@
 #! /bin/sh
 DIST=dev/main
-cd /root/proxmox
-for i in $(find . -name *.deb); do
+for i in $(find .. -name *.deb); do
 	b=$(basename ${i})
 	case ${b} in
 		*dbgsym*|*_amd64.deb) ;;
-		*_arm64.deb) rsync -ptog ${i} REPO/${DIST}/binary-arm64/${b} ;;
-		*_all.deb) rsync -ptog ${i} REPO/${DIST}/binary-all/${b} ;;
+		*_arm64.deb) rsync -ptog ${i} ${DIST}/binary-arm64/${b} ;;
+		*_all.deb) rsync -ptog ${i} ${DIST}/binary-all/${b} ;;
 		*) ;;
 	esac
 done
