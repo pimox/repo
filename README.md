@@ -15,7 +15,7 @@ Setup
 2. curl https://gitlab.com/minkebox/pimox/-/raw/master/dev/KEY.gpg | apt-key add -
 3. curl https://gitlab.com/minkebox/pimox/-/raw/master/dev/pimox.list > /etc/apt/sources.list.d/pimox.list
 4. apt update
-5. apt install pve-manager
+5. apt install proxmox-ve
 
 Notes
 ---
