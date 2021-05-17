@@ -3,7 +3,7 @@ DIST=dev/main
 for i in $(find .. -name *.deb); do
 	b=$(basename ${i})
 	case ${b} in
-		*dbgsym*|*_amd64.deb) ;;
+		*dbgsym*|*_amd64.deb|*dbg_*) ;;
 		*_arm64.deb) rsync -ptog ${i} ${DIST}/binary-arm64/${b} ;;
 		*_all.deb) rsync -ptog ${i} ${DIST}/binary-all/${b} ;;
 		*) ;;

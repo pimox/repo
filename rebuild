@@ -13,6 +13,6 @@ apt-ftparchive release ${DIST} >> ${DIST}/Release
 gpg --default-key "${EMAIL}" -abs -o - ${DIST}/Release > ${DIST}/Release.gpg
 gpg --default-key "${EMAIL}" --clearsign -o - ${DIST}/Release > ${DIST}/InRelease
 
-git add -A
-git commit -m update
-git push
+#git add -A
+#git commit -m update
+#git push
