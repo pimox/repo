@@ -4,12 +4,12 @@ Architecture: arm64
 Maintainer: Ceph Maintainers <ceph-maintainers@lists.ceph.com>
 Installed-Size: 14
 Depends: ceph-mgr (= 15.2.11-pve1), ceph-mon (= 15.2.11-pve1), ceph-osd (= 15.2.11-pve1)
-Recommends: ceph-mds (= 15.2.11-pve1)
+Recommends: ceph-mds (= 15.2.11-pve1), ceph-dkms
 Filename: dev/main/binary-arm64/ceph_15.2.11-pve1_arm64.deb
-Size: 8892
-MD5sum: 20a348a6b00f8774504e912a382aa998
-SHA1: 175aa85fc2a2b6a84341ac36d364f033d4249280
-SHA256: f263f9d60655b74b653bf8be61fb0f97c7bcca944d2b22d25829a244d201528e
+Size: 8912
+MD5sum: e84c72ea05ecbad5edca621e01c7c67a
+SHA1: b78ce09383d9721e9a2abe6aa2c040778eb821de
+SHA256: e375b6a5e8d0dc62ae99ca0caf08ef5695d4d0b8bbb4557b4ab08ffac4e285c7
 Section: admin
 Priority: optional
 Homepage: http://ceph.com/
