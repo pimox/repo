@@ -70,6 +70,21 @@ Description: common utilities to mount and interact with a ceph storage cluster
  block and file system storage.  This is a collection
  of common tools that allow one to interact with and administer a Ceph cluster.
 
+Package: ceph-dkms
+Version: 0.0.1
+Architecture: all
+Maintainer: Tim <tim.j.wilkinson@gmail.com>
+Installed-Size: 1320
+Depends: dkms (>= 2.1.0.0)
+Filename: dev/main/binary-all/ceph-dkms_0.0.1_all.deb
+Size: 248884
+MD5sum: c884699ae9c72dc64e177c13322d5354
+SHA1: 33a2ea000a3f76a68fe1b922c1a74c85fbc5e180
+SHA256: 9ca63af281191671dfc04f4bedfa4a42f2a678b403a5f6cff460272f9e30f68e
+Section: admin
+Priority: optional
+Description: DKMS to build in-kernel Ceph modules
+
 Package: ceph-fuse
 Source: ceph
 Version: 15.2.11-pve1
