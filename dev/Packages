@@ -40480,6 +40480,26 @@ Description: edk2 based firmware modules for virtual machines
  AAVMF offers the same for AARCH64 (ARM64) based VMs.
  Proxmox VE specific release with disabled secure boot.
 
+Package: pve-edk2-firmware
+Version: 2.20200531-1-rpve1
+Architecture: all
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Installed-Size: 264202
+Filename: dev/main/binary-all/pve-edk2-firmware_2.20200531-1-rpve1_all.deb
+Size: 2486280
+MD5sum: 6ebf90397f1a6cd2de5967e98e54d32c
+SHA1: e00525e06a6decfeda0fa4fcf4166ea3c8e4db2b
+SHA256: cbbe98d809317ed680dc73769edb61e1bdd74fed737231e704524836a4b8f9d3
+Section: misc
+Priority: optional
+Homepage: http://www.tianocore.org
+Description: edk2 based firmware modules for virtual machines
+ Contains OVMF and AAVMF. Open Virtual Machine Firmware (OVMF) is a build of
+ EDK II for virtual machines. It includes full support for UEFI, including
+ Secure Boot, allowing use of UEFI in place of a traditional BIOS in your VM.
+ AAVMF offers the same for AARCH64 (ARM64) based VMs.
+ Proxmox VE specific release with disabled secure boot.
+
 Package: pve-eslint
 Version: 7.18.0-1
 Architecture: all
