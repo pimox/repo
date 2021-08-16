@@ -1,4 +1,4 @@
-Pixmox - Proxmox for the Raspberry Pi
+Pimox - Proxmox for the Raspberry Pi
 ===
 
 Pimox is a port of Proxmox to the Raspberry Pi allowing you to build a Proxmox cluster of Rapberry Pi's or even a hybrid cluster of Pis and x86 hardware.
